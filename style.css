@@ -1,0 +1,296 @@
+/*
+1. Reset 
+2. Style globalne
+3. Typografia
+4. Komponenty
+5. Nagłowek
+6. Style glowych sekcji
+7. Stopka
+*/
+
+/*
+1.Reset
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*
+2. Style główne
+*/
+body {
+	background-color: #fbfbfb;
+	color: #939393;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+}
+
+section {
+	text-align: center;
+}
+
+img {
+	max-width: 100%;
+}
+
+/*
+3. Typografia
+*/
+
+p {
+	font-size: 14px;
+	line-height: 1.6
+}
+
+@media screen and (min-width: 1024px){
+	p {
+		font-size: 18px;
+	}
+}
+
+/*
+4. Komponenty
+*/
+
+.section-header {
+	font-size: 28px;
+	color: black;
+	font-weight: 600;
+	padding: 60px 0 18px;
+}
+
+@media screen and (min-width: 1024px){
+	.section-header {
+		padding: 80px 0 25px;
+
+	}
+}
+
+/*
+5. Nagłowek
+*/
+
+header img{
+	display: flex;
+	justify-content: center;
+	padding: 20px 0 0 20px;
+}
+
+@media screen and (min-width: 1024px){
+	header img{
+		display: flex;
+		justify-content: flex-start;
+		padding: 40px 0 0 40px;
+	}
+}
+
+nav {
+	display: flex;
+	justify-content: center;
+	color: black;
+	font-weight: 600;
+	margin: 0 160px 0 0;
+}
+
+@media screen and (min-width: 1024px){
+	nav {
+	display: flex;
+	justify-content: flex-end;
+}
+}
+
+li{
+	display: block;
+	padding: 10px 15px 20px
+}
+
+@media screen and (min-width: 1024px){
+	li{
+	display: inline-block;
+	padding: 0px 15px 20px;
+	margin: 0 20px 0 0;
+}
+}
+
+
+.section-one{
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
+	margin: 20px 0px 20px 80px;
+	padding: 60px 20px 20px 0px;
+}
+
+@media screen and (min-width: 1024px){
+	.section-one{
+		margin: 20px 0px 20px 1150px;
+		padding: 60px 20px 250px 0px;
+		display: flex;
+		justify-content: flex-end;
+		flex-direction: column;
+	}
+}
+
+header button{
+	color: white;
+	background-color: DarkTurquoise;
+	height: 40px;
+	width: 120px;
+	border: 2px solid white;
+	margin: 20px 0px 0px 100px;
+}
+
+@media screen and (min-width: 1024px){
+	header button{
+		margin: 20px 0 0 0;
+	}
+}
+
+header{
+	background: url(image/1.jpg)0 0;
+	background-size: cover;
+}
+
+@media screen and (min-width: 1024px){
+header{
+	background: url(image/1.jpg)0 0;
+	background-size: cover;
+}
+}
+
+/*
+6. Style glownych sekcji
+*/
+
+.section-about{
+	background-color: white;
+}
+
+.about {
+	text-align: center;
+}
+
+.section-about img {
+	margin: 40px 0 80px 0px;
+}
+
+@media screen and (min-width: 1024px){
+	.section-three  {
+	display: flex;
+	justify-content: space-around;
+}
+}
+
+.section-progress {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start; 
+	flex-direction: column;
+	padding: 0 0 40px 20px;
+	color: black;
+	font-weight: 600;
+}
+
+@media screen and (min-width: 1024px){
+	.section-progress {
+	padding: 0 0 0 200px;
+}
+}
+
+.section-three progress {
+	width: 350px;
+	height: 5px;
+	border: 1px solid white;
+	
+}
+
+@media screen and (min-width: 1024px){
+	.section-three progress {
+	width: 550px;
+}
+}
+
+.section-three h5 {
+	padding: 30px 0 20px 0;
+}
+
+.section-three img {
+	width: 600px;
+	height: 400px;
+}
+
+@media screen and (min-width: 1024px){
+.section-three img {
+	width: 1200px;
+	height: 600px;
+}
+}
+
+.section-four {
+	background-color: DarkTurquoise;
+	display: block;
+	padding: 40px 10px;
+	color: white;
+}
+
+@media screen and (min-width: 1024px){
+	.section-four {
+	display: flex;
+	justify-content: space-around; 
+	padding: 80px 140px 80px 100px;
+}
+}
+
+.section-four h3, .mark {
+	display: flex;
+	justify-content: center; 
+	align-items: center;
+	padding: 20px 0;
+}
+
+@media screen and (min-width: 1024px){
+.section-four h3, .mark {
+	display: flex;
+	justify-content: flex-start;
+	padding: 0 120px 0 0;
+}
+}
