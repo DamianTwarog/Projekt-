@@ -54,6 +54,11 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+a {
+	color: black;
+    text-decoration: none;
+}
 /*
 2. Style główne
 */
@@ -123,28 +128,32 @@ header img{
 	}
 }
 
-nav {
+.main a:hover {
+	color: DarkTurquoise;
+}
+
+.main-menu {
 	display: flex;
 	justify-content: center;
 	color: black;
 	font-weight: 600;
-	margin: 0 160px 0 0;
+	margin: 0 330px 0 0;
 }
 
 @media screen and (min-width: 1024px){
-	nav {
+	.main-menu {
 	display: flex;
 	justify-content: flex-end;
 }
 }
 
-li{
+.main{
 	display: block;
 	padding: 10px 15px 20px
 }
 
 @media screen and (min-width: 1024px){
-	li{
+	.main{
 	display: inline-block;
 	padding: 0px 15px 20px;
 	margin: 0 20px 0 0;
@@ -190,18 +199,11 @@ header{
 	background-size: cover;
 }
 
-@media screen and (min-width: 1024px){
-header{
-	background: url(image/1.jpg)0 0;
-	background-size: cover;
-}
-}
-
 /*
 6. Style glownych sekcji
 */
 
-.section-about{
+.section-two{
 	background-color: white;
 }
 
@@ -209,7 +211,7 @@ header{
 	text-align: center;
 }
 
-.section-about img {
+.section-two img {
 	margin: 40px 0 80px 0px;
 }
 
@@ -259,7 +261,7 @@ header{
 }
 
 @media screen and (min-width: 1024px){
-.section-three img {
+	.section-three img {
 	width: 1200px;
 	height: 600px;
 }
@@ -294,3 +296,335 @@ header{
 	padding: 0 120px 0 0;
 }
 }
+
+#product {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+@media screen and (min-width: 1024px){
+	#product{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	}
+}
+
+#product > div {
+	width: 100%;
+	height: 100%;
+}
+
+@media screen and (min-width: 1024px){
+	#product > div {
+	width: 25%;
+}
+}
+
+#product div img {
+	width: 100%;
+}
+
+#button-img {
+	border: solid 1px #e6e6e6; 
+	width: 100%;
+	height: 100px;
+	color: #a7a7a7;
+}
+
+.section-six {
+	padding: 0 0 40px 0;
+}
+
+.svg img {
+	height: 70px;
+}
+
+.flex h5 {
+	color: black;
+	text-transform: uppercase;
+	font-weight: 600;
+	align-items: center;
+}
+
+.svg {
+	background: #e6e6e6;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0 0 30px 0;
+}
+
+
+@media screen and (min-width: 1024px){
+.svg {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	margin-top: 20px;
+	padding: 100px 20px;
+}
+}
+
+#photo > div {
+	width: 25%;
+}
+
+#photo div img {
+	width: 100%;
+	padding: 30px 5px;
+}
+
+.flex {
+	display: inline-block;
+}
+
+.slaid {
+	background-color: DarkTurquoise;
+	color: white;
+	padding: 120px 0px 60px ;
+	line-height: 1.5;
+}
+
+.slaid h4 {
+	font-weight: 600;
+	padding: 0 0 25px 0;
+}
+
+.slaid p {
+	text-transform: uppercase;
+	margin:0 0 100px 0;
+}
+
+.loga {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	margin: 60px 10px;
+}
+
+@media screen and (min-width: 1024px){
+	.loga {
+	display: flex;
+	flex-direction: row;
+	margin: 60px 10px;	
+}
+}
+
+.loga img {
+	padding: 30px 0;
+}
+
+@media screen and (min-width: 1024px){
+	.loga img {
+	padding: 0 0 0 0;
+}
+}
+
+.projects {
+	background-color: #e6e6e6;
+}
+
+.projects p {
+	font-weight: 400;
+}
+
+.projects button {
+	background-color: DarkTurquoise;
+	color: white;
+	border: solid 1px DarkTurquoise;
+	height: 40px;
+	width: 170px;
+	margin: 10px 0 70px;
+	font-weight: 600;
+}
+
+.projects input {
+	height: 30px;
+	border: solid 1px white;
+}
+
+@media screen and (min-width: 1024px){
+	.projects input {
+	height: 35px;
+}
+}
+
+#username, #email {		
+	width: 180px;
+	margin: 20px 7px ;
+}	
+
+@media screen and (min-width: 1024px){
+#username, #email {		
+	width: 250px;
+}	
+}
+
+#title {
+	width: 385px;
+	
+}
+
+@media screen and (min-width: 1024px){
+#title {
+	width: 525px;
+}
+}
+
+#message {
+	width: 385px;
+	margin: 20px;
+	border: solid 1px white;
+}
+
+@media screen and (min-width: 1024px){
+#message {
+	width: 525px;
+}
+}
+
+.contact {
+	background-color: black;
+	color: #939393;
+	padding: 70px 0;
+}
+
+
+.contener {
+	padding: 0 60px 0;
+	display: flex;
+	flex-direction: column;
+}
+
+@media screen and (min-width: 1024px){
+.contener {
+	justify-content: space-around;
+	flex-direction: row;
+}
+}
+
+.left {
+	padding: 0 0 40px 0;
+}
+
+@media screen and (min-width: 1024px){
+.left {
+	padding: 0 0 20px 0;
+}
+}
+
+.center {
+	padding: 0 0 40px 0;
+}
+
+@media screen and (min-width: 1024px){
+.center {
+	padding: 0 0 20px 0;
+}
+}
+
+.right {
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: row;
+	padding: 0 0 40px 0;
+}
+
+.contact li {
+	padding: 10px 45px 0 0;
+	font-size: 14px;
+}
+
+.contact h4 {
+	color: white;
+	padding: 0 0 20px 0;
+}
+
+.contact p {
+	font-size: 14px;
+}
+
+.contact li:hover {
+	color: DarkTurquoise;
+}
+
+.overlayT
+{
+	position: relative;
+	width: 140px;
+	height: 122px;
+}
+
+@media screen and (min-width: 1024px){
+	.overlayT
+{
+	position: relative;
+	width: 340px;
+	height: 400px;
+}
+}
+
+.overlayT .link
+{
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: #939393;
+	left: 0px;
+	top: 0px;
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+}
+
+.overlayT:hover .link
+{
+	opacity: 1;
+}
+
+.icon
+{
+	display: block;
+	position: relative;
+	left: 195px;
+	top: 170px;
+	width: 100px;
+}
+
+@media screen and (min-width: 1024px){
+	.icon
+{
+	display: block;
+	position: relative;
+	left: 160px;
+	top: 120px;
+	width: 150px;
+}
+}
+
+video {
+	height: 28vh;
+	width: 90vw;
+}
+
+@media screen and (min-width: 1024px){
+video {
+	height: auto;
+	width: auto
+}
+}
+
+.play {
+	position: relative;
+	bottom: 140px;
+}
+
+@media screen and (min-width: 1024px){
+.play {
+	position: relative;
+	bottom: 350px;
+}
+}
+
